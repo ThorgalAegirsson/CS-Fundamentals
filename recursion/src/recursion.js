@@ -8,7 +8,7 @@
  * @returns {number}
  */
 function factorial(n) {
-  if (n ===1) return 1;
+  if (n === 0) return 1;
   return factorial(n-1)*n;
 }
 
@@ -65,14 +65,15 @@ return fib(n-1)+fib(n-2);
 function fibIter(n) {
     var temp1 = 0;
     var temp2 = 1;
-    if (n===1) return 0;
+    if (n === 1) return 0;
     if (n === 2) return 1;
-    for (let i = 3; i=n; i++){
+    for (let i = 3; i<=n; i++){
         let temp3 = temp2;
-        temp2 = temp1+temp2;
+        temp2 += temp1;
         temp1 = temp3;
     }
     return temp2;
+
 }
 
 /**
@@ -84,14 +85,14 @@ function fibIter(n) {
  */
 function isPalindrome(str) {
 
-return
+// return
 
-return
+// return
 
-madam
-m<--->m
-m<true>m 
-m<false>m
+// madam
+// m<--->m
+// m<true>m 
+// m<false>m
 }
 
 /**
